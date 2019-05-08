@@ -1,0 +1,28 @@
+<div class="container">
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">email</th>
+      <th scope="col">city</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  
+  <tbody>{{#each users}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{name}}</td>
+      <td>{{email}} </td>
+      <td>{{city}} </td>
+      <td><a href="/user/update/{{id}}"><i style="color:black" class="fas fa-pencil-alt"></i></a></td>
+      <td><a href="/user/delete/{{id}}"><i style="color:black" class="far fa-trash-alt"></i></a></td>
+    </tr>{{/each }}
+    
+  </tbody>
+</table>
+</div>
+
+
